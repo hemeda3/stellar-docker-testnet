@@ -24,6 +24,7 @@ services:
       - stellar-testnet
 #     entrypoint: ["/bin/bash"]
 #     entrypoint: ["/bin/bash", "-c", "horizon db migrate up && exec horizon"]
-    command: bash -c "while true; do echo hello; sleep 2; done"
+#     command: bash -c "while true; do echo hello; sleep 2; done"
+   command: top -b
 
 
