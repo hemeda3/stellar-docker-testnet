@@ -22,5 +22,5 @@ services:
       - ENABLE_CAPTIVE_CORE_INGESTION=false
     networks:
       - stellar-testnet
-    entrypoint: ["sh", "-c", "horizon db migrate up && exec horizon"]
+    entrypoint: ["/bin/bash", "-c", "horizon db migrate up && exec horizon"]
 
